@@ -1,3 +1,124 @@
+/*-------box sizing-------*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/*------utility classes------*/
+.container{
+    width:70vw;
+    margin:40px auto;
+}
+
 body{
     background-color: aquamarine;
+}
+
+/*-------global styles-------*/
+
+body {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+/*color scheme*/
+
+header.primary {
+    background:#B1F6CD;
+    text-align:center;
+    color:#F5C9EC;
+
+    /* Long Form */
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+
+    /* T,R,B,L */
+    padding: 40px 40px 40px 40px;
+
+    /* Top/Bottom Right/Left */
+    padding:40px 40px;
+    text-shadow: 2px 2px #000000;
+
+    /* Applies to All Sides */
+    padding:40px;
+}
+
+header.primary h1{
+    font-size:2rem;
+    margin:20px 0;
+}
+
+header.primary h1 a{
+    color:#fff;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size: 1.4rem;
+}
+
+header.primary nav{
+    width:80vw;
+    margin:0 auto;
+    max-width: 900px;
+}
+header.primary nav ul{
+    /* removes extra space from list item attachements */
+    padding:0;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+header.primary nav ul li{
+    list-style-type:none;
+}
+header.primary nav ul li a{
+    color:#F5EF9A;
+    text-decoration:none;
+    background-color:black;
+    background-color: rgba(0,0,0,.4);
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius:20px;
+    transition:5s;
+}
+
+header.primary nav ul li a:hover, header.primary nav ul li a:active{
+    background-color:rgba(0,0,0,.9)
+}
+
+
+
+@media screen and (max-width:400px){
+
+
+    header.primary nav ul{
+        flex-direction:column;
+    }
+
+    header.primary nav a{
+        display:block;
+    }
+
+    header.primary nav li{
+        margin-bottom:10px;
+    }
+
+}
+
+#intro {
+    border: 9px groove #7C33F5;
+    padding-bottom:1.1rem;
+}
+
+#intro h2{
+    color:rgb(46, 5, 112);
+    border: 9px groove #af8aeb;
 }
