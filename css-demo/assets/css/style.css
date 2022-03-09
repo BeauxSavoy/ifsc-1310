@@ -19,6 +19,27 @@ img{
     max-width:100%;
 }
 
+.img-right{
+    float:right;
+    margin-left: 20px;
+    border: 2px solid #c0c0c0;
+    padding: 5px;
+}
+
+.img-left{
+    float:left;
+    margin-right: 20px;
+    border: 2px solid #c0c0c0;
+    padding: 5px;
+}
+
+.img-center{
+    display:block;
+    margin:20px auto;
+    border: 2px solid #c0c0c0;
+    padding: 5px;
+}
+
 body{
     background-color: aquamarine;
 }
@@ -131,6 +152,8 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 2.8rem;
 }
 
 #content article.post{
@@ -199,3 +222,61 @@ time.post-date, figcaption, .post-meta{
   #colophon{
       background-color:#af8aeb;
   }
+
+#additional-elements h2{
+    color: #7C33F5;
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+#additional-elements a{
+    color: #7C33F5;
+}
+
+#additional-elements a:hover{
+    text-decoration: none;
+}
+
+#additional-elements h3{
+    border-left: 8px solid #7C33F5;
+    padding: 5px 10px;
+}
+
+table{
+width:100%;
+border:1px solid #c0c0c0;
+border-collapse: collapse;
+}
+
+tr{}
+
+tr:nth-child(even){
+    background-color: #13978D;
+}
+
+td:nth-child(2n), td:nth-child(3n){
+    text-align: right;
+}
+
+tr:hover{
+    background-color: #3b638b;
+}
+
+th{
+    background: #7C33F5;
+    color: #F5EF9A;
+    width:33%;
+    padding: 10px;
+}
+
+td{
+    border:1px solid #c0c0c0;
+    padding: 5px;
+}
+
+table caption{
+    color: #3b638b;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
