@@ -55,6 +55,9 @@ html {
   img {
     max-width: 100%;
     height: auto;
+    align-items: center;
+    width:  80%;
+    height: 80%;
   }
   section.container {
     background-color: #181c1fc0;
@@ -97,6 +100,7 @@ html {
     list-style-type: none;
     padding: 0;
     width: 20%;
+    text-align: center;
   }
   header.primary nav a:link,
     header.primary nav a:visited {
@@ -110,5 +114,20 @@ html {
 }
 h2{
     background-color: #181c1fc0;
+    font-size: larger;
+    font: bold;
 }
 
+h6{
+    background-color: #0d4370;
+}
+
+.widget.overview table {
+    font-size: 0.7em;
+    border-collapse: collapse;
+  }
+  
+  .widget.overview table td {
+    border-bottom: 1px solid rgb(95, 164, 211);
+    padding: 10px;
+  }
